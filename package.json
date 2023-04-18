@@ -1,0 +1,23 @@
+{
+  "name": "0xhelloworld",
+  "version": "1.0.0",
+  "description": "Sure, here's an example README for a \"Hello World\" smart contract in Solidity:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NobleOsinachi/0xHelloWorld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NobleOsinachi/0xHelloWorld/issues"
+  },
+  "homepage": "https://github.com/NobleOsinachi/0xHelloWorld#readme",
+  "devDependencies": {
+    "hardhat": "^2.14.0"
+  }
+}
