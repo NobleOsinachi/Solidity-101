@@ -4,6 +4,8 @@
   "description": "Sure, here's an example README for a \"Hello World\" smart contract in Solidity:",
   "main": "index.js",
   "scripts": {
+    "start": "",
+    "deploy": "npx hardhat run scripts/deploy.js --network goerli",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,6 +20,10 @@
   },
   "homepage": "https://github.com/NobleOsinachi/0xHelloWorld#readme",
   "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
     "hardhat": "^2.14.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }

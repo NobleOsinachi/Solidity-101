@@ -18,7 +18,7 @@ To run this smart contract, you'll need the following:
 
 1. Clone this repository to your local machine.
 2. Install the Solidity compiler according to the documentation.
-3. Open the Solidity file `hello_world.sol` in your preferred development environment.
+3. Open the Solidity file `HelloWorld.sol` in your preferred development environment.
 4. Compile the smart contract using the Solidity compiler.
 5. Deploy the compiled smart contract to your Ethereum client.
 
