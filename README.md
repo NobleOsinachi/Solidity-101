@@ -4,7 +4,9 @@ Sure, here's an example README for a "Hello World" smart contract in Solidity:
 
 ## Description
 
-This is a simple "Hello World" smart contract written in Solidity. It demonstrates the basic structure and functionality of a smart contract on the Ethereum blockchain.
+This is a simple "Hello World" smart contract written in Solidity. 
+It demonstrates the basic structure and functionality of a smart contract on the Ethereum blockchain.
+It also simulates deployment procedure.
 
 ## Requirements
 
