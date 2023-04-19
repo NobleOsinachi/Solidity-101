@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: GPL-3.0
+
+pragma solidity >=0.7.0 <0.9.0;
+// pragma solidity ^0.4.24;
+
+
+contract MyContract{
+
+    string value;
+
+    function get() public view returns(string memory){
+        return value;
+    }
+}

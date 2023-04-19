@@ -1,0 +1,99 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_wallet",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "balances",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyToken",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "wallet",
+				"outputs": [
+					{
+						"internalType": "address payable",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"custom:dev-run-script": "file_path",
+			"details": "This is a Solidity smart contract written in the Ethereum blockchain programming language. It is named \"MyContract\" and contains two functions, \"set\" and \"get\", which allow a user to set and retrieve a string value, respectively. The contract is licensed under the MIT License and includes a custom development script that can be run with the command \"dev-run-script file_path\". When the contract is deployed, the initial value of the string is set to \"default value\".",
+			"kind": "dev",
+			"methods": {},
+			"title": "MyContract",
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"SendEther.sol": "SendEther"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"SendEther.sol": {
+			"keccak256": "0xe739112a4c99db5d371f250891e8c8624449a55dfedb362c48941c095ce74175",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://9c92a544635703379fb52afde3e2a6ef34d1f9210268c5f1c7a497e4ca67a99a",
+				"dweb:/ipfs/QmXcAdCu93U7d6a5p4ybUVm4b7LnBgG3LurHHkBTYHhtFs"
+			]
+		}
+	},
+	"version": 1
+}
