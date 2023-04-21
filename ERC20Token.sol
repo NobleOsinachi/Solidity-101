@@ -1,2 +1,2 @@
-contract ERC20Token{
-}
+// contract ERC20Token{
+// }

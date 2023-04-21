@@ -1,14 +1,63 @@
 {
 	"compiler": {
-		"version": "0.8.19+commit.7dd6d404"
+		"version": "0.8.18+commit.87f61d96"
 	},
 	"language": "Solidity",
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "_wallet",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "_token",
+						"type": "address"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "_buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					}
+				],
+				"name": "Purchase",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "_buyer",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "tokensToBuy",
+						"type": "uint256"
+					}
+				],
+				"name": "TokensBought",
+				"type": "event"
 			},
 			{
 				"inputs": [],
@@ -39,6 +88,33 @@
 				"name": "addPerson",
 				"outputs": [],
 				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address payable",
+						"name": "buyer",
+						"type": "address"
+					}
+				],
+				"name": "buyToken",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyTokenNew",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "buyTokenOld",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -75,6 +151,19 @@
 						"internalType": "bool",
 						"name": "",
 						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "openingTime",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
@@ -173,6 +262,10 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"stateMutability": "payable",
+				"type": "receive"
 			}
 		],
 		"devdoc": {
@@ -180,21 +273,12 @@
 			"details": "This is a Solidity smart contract written in the Ethereum blockchain programming language. It is named \"MyContract\" and contains two functions, \"set\" and \"get\", which allow a user to set and retrieve a string value, respectively. The contract is licensed under the MIT License and includes a custom development script that can be run with the command \"dev-run-script file_path\". When the contract is deployed, the initial value of the string is set to \"default value\".",
 			"kind": "dev",
 			"methods": {},
-			"stateVariables": {
-				"owner": {
-					"details": "The owner of the contract"
-				}
-			},
 			"title": "MyContract",
 			"version": 1
 		},
 		"userdoc": {
 			"kind": "user",
-			"methods": {
-				"owner()": {
-					"notice": "This variable is immutable"
-				}
-			},
+			"methods": {},
 			"version": 1
 		}
 	},
@@ -215,11 +299,11 @@
 	},
 	"sources": {
 		"MyContract.sol": {
-			"keccak256": "0xb2e853a19d7eb3372906c8c811cb57f77eacff9858463fc01fa787eca5f0ec31",
+			"keccak256": "0x6d8c0ffd99c256765c419c1891a238ab1ba3aea27990ee41edbab479b93ad8e5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://a7b7e23cb7e14719a1ec404facda38a99e4ad9f97516e799bba90d53a6d2499c",
-				"dweb:/ipfs/QmdvUvarioWV2TV3supWpQYxcHqrsoX7WpXNZ5sfdpDfcq"
+				"bzz-raw://3a440a912e445fb640c0e9eb6c189f8d9a7d2d0909665dec8467105f02380a59",
+				"dweb:/ipfs/Qma7QFtEDUuFkufdrwBuvGCuukvD4kH3ctv4wiXUW6Mcg3"
 			]
 		}
 	},
