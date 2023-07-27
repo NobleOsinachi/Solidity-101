@@ -41,4 +41,9 @@ Overall, events provide a flexible and powerful way for Solidity contracts to co
 
         emit messagechanged(oldmsg, newmesssage);
     }
+     
+    // A public function that returns a string
+    function sayHello() public pure returns (string memory) {
+        return "Hello World";
+    }
 }
